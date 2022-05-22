@@ -1,0 +1,8 @@
+Django
+django-crispy-forms
+
+social-auth
+
+django-google-maps
+google
+googlemaps

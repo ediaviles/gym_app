@@ -1,0 +1,64 @@
+{% block content %}
+{% load static %}
+<head>
+    {% load static %}
+    <link href="{% static 'HealthWebsite/sidebar.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="bar">
+                    <a href="#">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="{% static 'HealthWebsite/default.png' %}">
+                <h3>Default User</h3>
+                <p>Streak: 3 Days</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <span class="item">Daily Diary</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Progress</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><span class="icon"><i class="fas fa-dumbbell"></i></span>
+                        <span class="item">Gym Info</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">Gym Buddies</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var sidebar = document.querySelector(".bar");
+        sidebar.addEventListener("click", function() {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+</body>
+
+{% endblock %}

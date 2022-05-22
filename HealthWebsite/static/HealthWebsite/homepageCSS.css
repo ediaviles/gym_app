@@ -1,0 +1,66 @@
+.masthead {
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2)
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.pac-container {
+    background-color: #FFF;
+    z-index: 20;
+    position: fixed;
+    display: inline-block;
+    float: left;
+}
+.modal{
+    z-index: 20;   
+}
+.modal-backdrop{
+    z-index: 10;        
+}
+
+#bg-text {
+    font-size: 4rem;
+}
+
+#bg-undertext {
+    font-size: 1.5rem;
+}
+
+.text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 125%;
+}
+
+.text-collapse {
+    position: absolute;
+    width: 100%;
+    height: 140%;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 30vh;
+    }
+    #bg-text {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    #bg-undertext {
+        font-size: calc(0.525rem + 1.3vw);
+    }
+}
